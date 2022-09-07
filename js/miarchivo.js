@@ -1,4 +1,4 @@
-let precioFinal = Number(prompt("Indique cual fue el precio final se su compra"))
+/*let precioFinal = Number(prompt("Indique cual fue el precio final se su compra"))
 
 
 for (let i = 1; i <= 1000; i++) {
@@ -7,7 +7,7 @@ for (let i = 1; i <= 1000; i++) {
     } else {
         console.log(`El numero ${i} es IMPAR`);
     }
-}
+
 
 
 const suma  = (a,b) => a + b
@@ -23,8 +23,30 @@ console.log(nuevoPrecio)
 
 alert ("Si el precio final del producto es PAR se lleva un premio de regalo")
 
-if  (precioFinal == 2, 4, 6, 8, 10) {
+if  (precioFinal == 2 || precioFinal == 4 || precioFinal == 3 || precioFinal == 4) {
     (console.log("Felicitaciones, su numero es " + nuevoPrecio));
-    } else (precioFinal == 1, 3, 5, 7, 9); {
+    } else (precioFinal == 1 && precioFinal == 3 && precioFinal == 5 && precioFinal == 7); {
     (console.log("Mala suerte, su numero es " + nuevoPrecio));
     }
+*/
+
+let numeroIngresado = Number(prompt ("Ingrese cual fue el precio final de su compra"))
+
+function solicitarNumero() {
+    alert("El numero ingresado es " + numeroIngresado)
+}
+
+solicitarNumero();
+
+alert ("Si el precio final del producto supera los 500$, se lleva un cupon del 15% de descuento en la proxima compra")
+
+if (numeroIngresado >= 500) {
+    alert("Felicitaciones, recibiste un cupon del 15% de descuento para tu proxima compra");
+} else {
+    alert("Los usuarios que gasten mas de 500$ en productos recibiran un cupon del 15% de descuento como regalo")
+}
+
+if (numeroIngresado <= 0) {
+    alert("Ingrese un numero valido para la proxima")
+}
+
